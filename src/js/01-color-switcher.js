@@ -10,8 +10,8 @@ function getRandomHexColor() {
 startButton.addEventListener('click', onPressStartButton);
 
 function onPressStartButton() {
+  startButton.disabled = true;
   colorID = setInterval(() => {
-    startButton.disabled = true;
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
 }
